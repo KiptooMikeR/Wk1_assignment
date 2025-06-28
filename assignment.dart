@@ -148,3 +148,33 @@ void analyzeNumbers(List<int> numbers) {
 // - Even: divisible by 2 with 0 remainder
 // - Odd: not divisible by 2 (remainder 1)
     print('$number is ${number % 2 == 0 ? 'even' : 'odd'}');
+
+/**
+     * Categorize number by size using enhanced switch
+     * 
+     * Categories:
+     * - Large:  101 and above (>= 101)
+     * - Medium: 11 to 100 (>= 11)
+     * - Small:  1 to 10 (>= 1)
+     * 
+     * Note: Switch cases are evaluated top-to-bottom, so we check
+     *       largest ranges first to prevent incorrect matches
+     * 
+     * Special handling:
+     * - Numbers < 1 (negative or zero) fall through to default case
+     */
+    switch (number) {
+      // Large numbers (101+)
+      case >= 101:
+        print('$number is large');
+        break;
+      
+      // Medium numbers (11-100)
+      case >= 11:
+        print('$number is medium');
+        break;
+      
+      // Small numbers (1-10)
+      case >= 1:
+        print('$number is small');
+        break;
