@@ -178,3 +178,10 @@ void analyzeNumbers(List<int> numbers) {
       case >= 1:
         print('$number is small');
         break;
+
+      // Handle all other cases (negative numbers and zero)
+      default:
+        print('$number is not categorized');
+    }
+  }
+}
