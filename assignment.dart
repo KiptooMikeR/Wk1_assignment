@@ -76,7 +76,7 @@ void controlFlowExamples() {
   } else {
     print('$number is zero');
   }
-  
+
   // ======== Voting Eligibility Check ========
   int age = 17; // Age to check for voting eligibility
   if (age >= 18) {
@@ -84,3 +84,33 @@ void controlFlowExamples() {
   } else {
     print('You are not eligible to vote');
   }
+
+ // ======== Switch Case for Days of the Week ========
+  int day = 3; // Day number to check
+  switch (day) {
+    case 1:
+      print('Monday');
+      break;
+    case 2:
+      print('Tuesday');
+      break;
+    case 3:
+      print('Wednesday');
+      break;
+    case 4:
+      print('Thursday');
+      break;
+    case 5:
+      print('Friday');
+      break;
+    case 6:
+      print('Saturday');
+      break;
+    case 7:
+      print('Sunday');
+      break;
+    default:
+      print('Invalid day'); // Handle invalid day input
+  }
+
+
