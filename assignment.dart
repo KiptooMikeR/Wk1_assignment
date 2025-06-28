@@ -136,3 +136,10 @@ void controlFlowExamples() {
     k++; // Increment k
   } while (k <= 5);
 }
+
+// ======== Task 5: Combine Data & Control Flow ========
+void analyzeNumbers(List<int> numbers) {
+  // Iterate through each number in the input list
+  for (int number in numbers) {
+    // Print current number being processed
+    print('\nNumber: $number');
