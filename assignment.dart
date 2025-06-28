@@ -143,3 +143,8 @@ void analyzeNumbers(List<int> numbers) {
   for (int number in numbers) {
     // Print current number being processed
     print('\nNumber: $number');
+
+// Check if number is even or odd using modulo operator
+// - Even: divisible by 2 with 0 remainder
+// - Odd: not divisible by 2 (remainder 1)
+    print('$number is ${number % 2 == 0 ? 'even' : 'odd'}');
