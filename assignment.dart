@@ -35,3 +35,28 @@ void defineVariables() {
 
   /// Converts an integer to a double
   double intToDouble(int input) => input.toDouble();
+
+
+// ======== 3. Combined Conversion Demo ========
+/// Converts input string to both int and double, then prints results
+/// If the conversion fails, it catches, 
+/// the error and prints an error message.
+///
+/// [number] - The string input to be converted.
+void convertAndDisplay(String number) {
+  try {
+    // Attempt to convert the string to an integer
+    int intValue = stringToInt(number);
+    
+    // Attempt to convert the string to a double
+    double doubleValue = stringToDouble(number);
+    
+    // Print the results of the conversions
+    print('String "$number" converted to:');
+    print('  int: $intValue');       // Display the integer value
+    print('  double: $doubleValue');  // Display the double value
+  } catch (e) {
+    // Catch any exceptions that occur during conversion
+    print('Error converting "$number": $e'); // Print the error message
+  }
+}
