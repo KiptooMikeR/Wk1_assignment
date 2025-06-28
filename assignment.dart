@@ -76,3 +76,11 @@ void controlFlowExamples() {
   } else {
     print('$number is zero');
   }
+  
+  // ======== Voting Eligibility Check ========
+  int age = 17; // Age to check for voting eligibility
+  if (age >= 18) {
+    print('You are eligible to vote');
+  } else {
+    print('You are not eligible to vote');
+  }
