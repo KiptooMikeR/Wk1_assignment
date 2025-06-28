@@ -37,7 +37,7 @@ void defineVariables() {
   double intToDouble(int input) => input.toDouble();
 
 
-// ======== 3. Combined Conversion Demo ========
+// ======== Task 3: Combined Conversion Demo ========
 /// Converts input string to both int and double, then prints results
 /// If the conversion fails, it catches, 
 /// the error and prints an error message.
@@ -60,3 +60,19 @@ void convertAndDisplay(String number) {
     print('Error converting "$number": $e'); // Print the error message
   }
 }
+
+// ======== Task 4: Control flows ========
+/// Demonstrates various control flow examples including if-else statements,
+/// switch-case statements, and different types of loops.
+void controlFlowExamples() {
+  // ======== If-Else Examples ========
+  int number = 10; // Number to check
+
+  // Check if the number is positive, negative, or zero
+  if (number > 0) {
+    print('$number is positive');
+  } else if (number < 0) {
+    print('$number is negative');
+  } else {
+    print('$number is zero');
+  }
