@@ -127,3 +127,12 @@ void controlFlowExamples() {
     print(j);
     j--; // Decrement j
   }
+
+// Do-while loop: Print numbers from 1 to 5
+  print('do-while loop:');
+  int k = 1; // Initialize k
+  do {
+    print(k);
+    k++; // Increment k
+  } while (k <= 5);
+}
