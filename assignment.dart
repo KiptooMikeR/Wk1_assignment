@@ -113,4 +113,9 @@ void controlFlowExamples() {
       print('Invalid day'); // Handle invalid day input
   }
 
-
+// ======== Loop Examples ========
+  // For loop: Print numbers from 1 to 10
+  print('for loop:');
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
