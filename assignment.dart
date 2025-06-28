@@ -85,7 +85,7 @@ void controlFlowExamples() {
     print('You are not eligible to vote');
   }
 
- // ======== Switch Case for Days of the Week ========
+// ======== Switch Case for Days of the Week ========
   int day = 3; // Day number to check
   switch (day) {
     case 1:
@@ -118,4 +118,12 @@ void controlFlowExamples() {
   print('for loop:');
   for (int i = 1; i <= 10; i++) {
     print(i);
+  }
+
+// While loop: Print numbers from 10 to 1
+  print('while loop:');
+  int j = 10; // Initialize j
+  while (j >= 1) {
+    print(j);
+    j--; // Decrement j
   }
